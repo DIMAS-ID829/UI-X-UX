@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg-animate"></canvas>
+  <div class="login-container">
+    <div class="icon-cart">
+      <!-- Simple SVG cart icon -->
+      <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+        <g stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 28h44l-6 24H28l-6-24z"/>
+          <circle cx="32" cy="56" r="3"/>
+          <circle cx="48" cy="56" r="3"/>
+          <path d="M40 24v10"/>
+          <path d="M36 28l4-4 4 4"/>
+        </g>
+      </svg>
+    </div>
+    <form class="login-form" autocomplete="off">
+      <div class="input-group">
+        <span class="icon">
+          <svg width="16" height="16" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8a3 3 0 100-6 3 3 0 000 6z"/><path d="M14 14v-1a4 4 0 00-8 0v1z"/></svg>
+        </span>
+        <input type="text" placeholder="USERNAME" required>
+      </div>
+      <div class="input-group">
+        <span class="icon">
+          <svg width="16" height="16" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="10" height="6" rx="2"/><path d="M8 7V5a2 2 0 114 0v2"/></svg>
+        </span>
+        <input type="password" placeholder="PASSWORD" required>
+      </div>
+      <button type="submit" class="btn-login">LOGIN</button>
+      <a href="#" class="forgot">Forgot password?</a>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
